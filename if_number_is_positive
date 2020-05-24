@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        System.out.println(answerer());
+    }
+
+    public static String answerer() {
+        Scanner scanner = new Scanner(System.in);
+        int input = scanner.nextInt();
+
+        if (input > 0) {
+            return "YES";
+        } else {
+            return "NO";
+        }
+    }
+}
