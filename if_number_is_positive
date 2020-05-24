@@ -16,3 +16,8 @@ class Main {
         }
     }
 }
+
+/*
+Returns true if the number is positive.
+Zero is not a positive number.
+*/
