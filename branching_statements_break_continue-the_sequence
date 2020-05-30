@@ -1,3 +1,59 @@
+import java.util.Scanner;
+
+public class theSequence {
+    public static void main(String[] args) {
+        sequence();
+    }
+
+    /* with branching */
+    public static void sequence() {
+        Scanner scanner = new Scanner(System.in);
+
+        int number = scanner.nextInt();
+        int prints = 0;
+
+        for (int i = 1; i <= number; i++) {
+            for (int j = 0; j < i; j++) {
+                if (prints == number) {
+                    break;
+                }
+
+                System.out.print(i + " ");
+                prints++;
+            }
+            if (prints == number) {
+                break;
+            }
+        }
+
+    }
+
+}
+
+
+/* without branching
+    public static void sequence() {
+        Scanner scanner = new Scanner(System.in);
+
+        int number = scanner.nextInt();
+        int prints = 0;
+
+        for (int i = 1; i <= number && prints != number; i++) {
+
+            for (int j = 0; j < i && prints != number; j++) {
+
+                System.out.print(i + " ");
+                prints++;
+                
+            }
+
+        }
+
+    }
+}
+
+ */
+
 /*
 Write a program that prints a part of the sequence 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 ... 
 (the number is repeated as many times, to what it equals to).
